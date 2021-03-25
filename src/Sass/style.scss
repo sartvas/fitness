@@ -3,6 +3,9 @@
 @import 'blocks/variables';
 @import 'blocks/header';
 @import 'blocks/button';
+@import 'blocks/consult';
+@import 'blocks/titles';
+@import 'blocks/forms';
 
 * {
     font-family: "Museo Sans Cyrl", sans-serif;
@@ -11,4 +14,54 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+.advantages {
+    min-height: 473px;
+    background: url('/src/img/bg2.png') center center/cover no-repeat;
+    &__header {
+        padding-top: 73px;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        width: 900px;
+        padding: 65px 0 67px 0;
+        margin: 0 auto;
+    }
+    &__icon {
+        display: flex;
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 25px 0 25px;
+    }
+    &__icon_header {
+        padding-top: 35px;
+        min-height: 29px;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__icon_texts {
+        padding-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #0D0D0D;
+        span {
+            color: #FF0000;
+
+        }
+    }
+
 }
