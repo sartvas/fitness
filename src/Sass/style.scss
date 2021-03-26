@@ -10,9 +10,15 @@
 @import 'blocks/titles';
 @import 'blocks/forms';
 @import 'blocks/carousel';
+@import 'blocks/catalog';
 
 .container {
     max-width: 950px;
+    margin: 0 auto;
+}
+
+.containers  {
+    max-width: 820px;
     margin: 0 auto;
 }
 
