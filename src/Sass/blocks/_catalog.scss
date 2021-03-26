@@ -34,17 +34,20 @@
         }
     }
     &__content {
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
-        margin-top: 45px;
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
         overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -172,6 +175,17 @@
                     top: 7px;
                 }
 
+            }
+        }
+        &__back {
+            display: block;
+            color: #C70101;
+            margin-top: 70px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            &:hover {
+                color: #C70101;
             }
         }
 
